@@ -238,6 +238,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
+  font-weight: 700;
   margin: -62px 0 0;
 }
 
@@ -277,7 +278,6 @@
 }
 
 .u-section-2 .u-text-6 {
-  font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.2;
   text-transform: none;
@@ -287,6 +287,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
+  font-weight: 700;
   margin: -62px 0 0;
 }
 
@@ -326,7 +327,6 @@
 }
 
 .u-section-2 .u-text-9 {
-  font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.2;
   text-transform: none;
@@ -336,6 +336,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
+  font-weight: 700;
   margin: -62px 0 0;
 }
 
