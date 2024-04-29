@@ -21539,7 +21539,7 @@ a.pswp__share--download:hover {
 @keyframes customAnimationIn {
   from {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, calc(-1 * var(--animation-custom_in-rotate)));
     opacity: var(--animation-custom_in-opacity);
   }
   to {
@@ -21556,7 +21556,7 @@ a.pswp__share--download:hover {
   }
   to {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, calc(-1 * var(--animation-custom_in-rotate)));
     opacity: var(--animation-custom_in-opacity);
   }
 }
@@ -42393,13 +42393,17 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-nav-1 {
-  font-size: 1rem;
-  letter-spacing: 0px;
   font-weight: 500;
+  font-size: 1rem;
+}
+
+.u-header .u-menu-close-1 {
+  margin-top: 20px;
 }
 
 .u-header .u-nav-2 {
   font-size: 1.25rem;
+  margin: 21px auto 0;
 }
 
 .u-header .u-text-1 {
@@ -42420,17 +42424,17 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-btn-3 {
   font-weight: 700;
-  padding: 0;
-}
-
-.u-header .u-btn-4 {
-  font-weight: 700;
+  margin-top: 0;
   padding: 0;
 }
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     margin-top: -32px;
     margin-right: 0;
+  }
+
+  .u-header .u-nav-1 {
+    letter-spacing: normal;
   }
 
   .u-header .u-text-1 {
