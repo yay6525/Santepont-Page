@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('images/-min-9.jpg');
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('images/-min-6.jpg');
   background-position: 63.21% 50%;
 }
 
@@ -16,30 +16,7 @@
   margin: 27px auto 0;
 }
 
-.u-section-1 .u-text-2 {
-  width: 770px;
-  margin: 40px auto 0;
-}
-
 .u-section-1 .u-btn-1 {
-  border-style: solid;
-  margin-top: 2px;
-  padding: 0;
-}
-
-.u-section-1 .u-btn-2 {
-  padding: 0;
-}
-
-.u-section-1 .u-btn-3 {
-  padding: 0;
-}
-
-.u-section-1 .u-btn-4 {
-  padding: 0;
-}
-
-.u-section-1 .u-btn-5 {
   border-style: solid;
   align-self: center;
   font-weight: 700;
@@ -77,7 +54,7 @@
   padding: 15px;
 }
 
-.u-section-1 .u-text-3 {
+.u-section-1 .u-text-2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
@@ -100,7 +77,7 @@
   padding: 15px;
 }
 
-.u-section-1 .u-text-4 {
+.u-section-1 .u-text-3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
@@ -123,7 +100,7 @@
   padding: 15px;
 }
 
-.u-section-1 .u-text-5 {
+.u-section-1 .u-text-4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
@@ -146,7 +123,7 @@
   padding: 15px;
 }
 
-.u-section-1 .u-text-6 {
+.u-section-1 .u-text-5 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
@@ -177,10 +154,6 @@
     width: 720px;
   }
 
-  .u-section-1 .u-text-2 {
-    width: 720px;
-  }
-
   .u-section-1 .u-list-1 {
     width: 720px;
   }
@@ -203,12 +176,8 @@
     margin-top: 90px;
   }
 
-  .u-section-1 .u-text-2 {
-    width: 540px;
+  .u-section-1 .u-btn-1 {
     margin-top: 353px;
-  }
-
-  .u-section-1 .u-btn-5 {
     margin-bottom: -77px;
   }
 
@@ -253,12 +222,8 @@
     margin-top: 207px;
   }
 
-  .u-section-1 .u-text-2 {
-    width: 340px;
+  .u-section-1 .u-btn-1 {
     margin-top: 362px;
-  }
-
-  .u-section-1 .u-btn-5 {
     margin-bottom: -307px;
   }
 
@@ -532,7 +497,7 @@
     min-height: 844px;
   }
 } .u-section-3 {
-  background-image: url("images/0f283f22b9c28ac6581836ecdf7f4f42bda0ed1b5a0f3c8750b140c7790d50ec2b086ef3f701b82ac902b9396a39dde76e3fcea1337ece8e3439c3_1280.jpg?rand=d98e");
+  background-image: url("images/0f283f22b9c28ac6581836ecdf7f4f42bda0ed1b5a0f3c8750b140c7790d50ec2b086ef3f701b82ac902b9396a39dde76e3fcea1337ece8e3439c3_1280.jpg");
   background-position: 50% 50%;
 }
 
