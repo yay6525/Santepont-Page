@@ -3,7 +3,7 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 752px;
+  min-height: 1479px;
 }
 
 .u-section-1 .u-text-1 {
@@ -16,10 +16,43 @@
   margin: 30px auto 0;
 }
 
+.u-section-1 .u-text-3 {
+  font-size: 1.25rem;
+  width: 808px;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-text-4 {
+  width: 808px;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-text-5 {
+  width: 808px;
+  font-size: 1.25rem;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-text-6 {
+  width: 808px;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-line-1 {
+  width: 912px;
+  height: 0;
+  margin: 9px auto 0;
+}
+
+.u-section-1 .u-text-7 {
+  width: 808px;
+  margin: 20px auto 0;
+}
+
 .u-section-1 .u-form-1 {
   height: 372px;
   width: 570px;
-  margin: 30px auto 60px;
+  margin: 20px auto 60px;
 }
 
 .u-section-1 .u-form-group-3 {
@@ -31,11 +64,15 @@
   width: 16px;
 }
 
-.u-section-1 .u-text-4 {
+.u-section-1 .u-text-9 {
   font-size: 0.875rem;
 }
 
 @media (max-width: 1199px) {
+  .u-section-1 .u-text-3 {
+    font-weight: 400;
+  }
+
   .u-section-1 .u-form-group-3 {
     height: 62px;
     margin-top: 35px;
@@ -48,10 +85,58 @@
   .u-section-1 .u-text-2 {
     width: 720px;
   }
+
+  .u-section-1 .u-text-3 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-6 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-7 {
+    width: 720px;
+  }
 }
 
 @media (max-width: 767px) {
   .u-section-1 .u-text-2 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-6 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-7 {
     width: 540px;
   }
 
@@ -62,6 +147,30 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-2 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-6 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-7 {
     width: 340px;
   }
 
