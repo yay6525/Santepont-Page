@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="Careers.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 7.6.5, nicepage.com">
+    <meta name="generator" content="Nicepage 7.7.3, nicepage.com">
     <meta name="referrer" content="origin">
     <meta property="og:title" content="Santepont Careers">
     <meta property="og:description" content="Join Santepont's program for enterprise process automation.">
@@ -27,7 +27,101 @@
 }</script>
     <meta name="theme-color" content="#232b79">
     <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6LeSPAgrAAAAADHrmwXni1kEGBVYoz62y7X9nRaf';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
+
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
+
+        console.error('Error in grecaptcha: ', error);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
+
+                        grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                            if (!token) {
+                                throw new Error('Empty token received from reCAPTCHA');
+                            }
+
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var response = forms[i].querySelector('[name="recaptchaResponse"]');
+
+                                if (!response) {
+                                    response = document.createElement('input');
+                                    response.setAttribute('type', 'hidden');
+                                    response.setAttribute('name', 'recaptchaResponse');
+                                    forms[i].appendChild(response);
+                                }
+
+                                response.value = token;
+                            }
+
+                            submitFormCb();
+                        }).catch((e) => {
+                            showRecaptchaError(e.message);
+                        });
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+            })(
+                grecaptcha,
+                
+                '6LeSPAgrAAAAADHrmwXni1kEGBVYoz62y7X9nRaf',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-a184"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="785" data-image-height="154">
           <img src="images/library3am.png" class="u-logo-image u-logo-image-1">
@@ -73,8 +167,7 @@
         <h2 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-1">Now Hiring </h2>
         <p class="u-align-center u-text u-text-palette-1-base u-text-2"><b>We are seeking motivated and talented individuals to join our AI/ML team as interns. This internship program offers a unique opportunity to gain hands-on experience in researching and implementing AI-powered tools and applications to streamline business processes and optimize operations. Interns will work closely with our experienced engineers, contributing to real-world projects and learning from industry experts.</b>
         </p>
-        <p class="u-align-left u-text u-text-palette-1-base u-text-3">
-          <span style="font-weight: 400;"> Responsibilities:</span>
+        <p class="u-align-left u-text u-text-palette-1-base u-text-3"><span style="font-weight: 400;"> Responsibilities:</span>
         </p>
         <ul class="u-align-left u-text u-text-palette-1-base u-text-4">
           <li>Research AI/ML models and software for process optimization</li>
@@ -110,9 +203,7 @@
               <div class="u-file-input-wrapper">
                 <a class="u-btn u-button-style u-upload-button">Upload Resume</a>
                 <div class="u-file-list">
-                  <div class="u-file-item u-file-template">
-                    <span class="u-file-name u-text">FileExample.pdf</span>
-                    <span class="u-file-remove u-icon u-text-grey-30 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 51.976 51.976" style=""><use xlink:href="#svg-bedd"></use></svg><svg class="u-svg-content" viewBox="0 0 51.976 51.976" x="0px" y="0px" id="svg-bedd" style="enable-background:new 0 0 51.976 51.976;"><g><path d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
+                  <div class="u-file-item u-file-template"><span class="u-file-name u-text">FileExample.pdf</span><span class="u-file-remove u-icon u-text-grey-30 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 51.976 51.976" style=""><use xlink:href="#svg-bedd"></use></svg><svg class="u-svg-content" viewBox="0 0 51.976 51.976" x="0px" y="0px" id="svg-bedd" style="enable-background:new 0 0 51.976 51.976;"><g><path d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
 		C54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778
 		c-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828
 		c0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828
@@ -120,10 +211,8 @@
 </g></svg></span>
                   </div>
                 </div>
-                <p class="u-file-max u-text u-text-grey-30 u-text-9">Max File Size: 10 MB</p>
-                <span class="u-file-group">
-                  <input type="file" id="file-upload-f19e" name="file" class="u-input u-input-rectangle u-text-black" required="" accept="IMAGES">
-                </span>
+                <p class="u-file-max u-text u-text-grey-30 u-text-9">Max File Size: 10 MB</p><span class="u-file-group">
+                  <input type="file" id="file-upload-f19e" name="file" class="u-input u-input-rectangle u-text-black" required="" accept="IMAGES"></span>
               </div>
             </div>
             <div class="u-align-left u-form-group u-form-submit">
@@ -134,6 +223,7 @@
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
             <input type="hidden" name="formServices" value="bdbb6f8d-3933-c632-47c7-1759dac3873b">
+            <input type="hidden" name="siteKey" value="6LeSPAgrAAAAADHrmwXni1kEGBVYoz62y7X9nRaf">
           </form>
         </div>
       </div>
